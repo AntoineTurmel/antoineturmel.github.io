@@ -1,10 +1,23 @@
-@import url(http://fonts.googleapis.com/css?family=Cagliostro);
+@font-face {
+  font-family: "FeuraSans";
+  src: url("fonts/FeuraSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "FeuraSans";
+  src: url("fonts/FeuraSans-Bold.ttf");
+  font-weight: bold;
+}
+
 body {
   margin:0px;
   font-family: Helvetica, Arial, sans-serif;
   color: white;
   background: url(images/inside_by_geekshadow-d4e58t2.jpg);
-  background-attachment:fixed;  
+  background-color:#111600;
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  background-position:center;
 }
 
 p {
@@ -19,28 +32,47 @@ a, a:visited, a:hover {
 #page {
   padding-top:10px;
   padding-bottom: 10px;
-  font-family: 'Cagliostro', sans-serif;
+  font-family: 'FeuraSans', sans-serif;
   font-size: 20px;
   background: url(images/noise.png);
   background-attachment:fixed;
   background-color: rgb(54, 54, 54);
-  max-width: 500px;
+  max-width: 480px;
   padding-left: 20px;
+  padding-right: 20px;
   margin:auto;
   border-radius: 0px 0px 0px 0px;
 }
+
+#page img {
+  border-radius:5px;
+  border-color:#acd553;
+  border-style:solid;
+  border-width:1px;
+}
+
 #footer {
-  font-family: 'Cagliostro', sans-serif;
+  font-family: 'FeuraSans', sans-serif;
   font-size: 20px;
   background: url(images/noise.png);
   background-attachment:fixed;
   background-color: #3e5528;
   max-width: 500px;
   margin:auto;
+  padding-top: 10px;
   padding-left: 20px;
-  height:100px;
   border-radius: 0px 0px 40px 40px;
-  line-height:150px;
+}
+
+#footer ul {
+  margin-top:10px;
+  padding-left:0px;
+  padding-top:0px;
+  padding-bottom:10px;
+}
+
+#footer li {
+  list-style-type:none;
 }
 
 #page p {
